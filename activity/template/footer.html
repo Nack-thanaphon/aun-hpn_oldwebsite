@@ -1,0 +1,249 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+<style>
+    /* Add a dark background color to the footer */
+    
+    footer {
+        background-color: #164589;
+        /*002C54*/
+        color: #f5f5f5;
+        padding: 10px;
+    }
+    
+    #sticky-footer {
+        flex-shrink: none;
+        background: #007bff;
+        background: linear-gradient(to right, #0062E6, #33AEFF);
+    }
+    
+    .footer a {
+        color: #f5f5f5;
+        text-decoration: none;
+    }
+    
+    .footer a:hover {
+        color: orange;
+        text-decoration: none;
+    }
+    
+    .footer a:active {
+        text-decoration: none;
+        color: orange;
+    }
+    
+    .footer a:enabled {
+        text-decoration: none;
+    }
+    
+    .sizefont {
+        font-size: 20px;
+    }
+    
+    .sizefont2 {
+        font-size: 28px;
+        margin-top: 0px;
+    }
+    
+    .sizefont3 {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    
+    .logoweb {
+        font-size: 22px;
+        color: #f5f5f5;
+    }
+    
+    .well {
+        border-radius: 0px;
+        height: 100%;
+        margin: 15px auto;
+        width: 100%;
+        /*background-image: url('img/e3.png');*/
+        color: black;
+        line-height: 30px;
+        padding: 10px;
+    }
+    
+    .footer0 {
+        font-size: 16px;
+        margin: 0px;
+        background-color: #FFB600;
+    }
+    
+    .effect {
+        width: 75%;
+    }
+    
+    .effect .buttona {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .effect a {
+        text-decoration: none !important;
+        color: #fff;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        margin-right: 15px;
+        font-size: 25px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .effect a i {
+        position: relative;
+        z-index: 3;
+    }
+    
+    .effect a.fb {
+        background-color: #3b5998;
+    }
+    
+    .effect a.tw {
+        background-color: #00aced;
+    }
+    
+    .effect a.yt {
+        background-color: #C70039;
+    }
+    /* aeneas effect */
+    
+    .effect.aeneas a {
+        transition: border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s, -webkit-transform 0.4s linear 0s;
+        transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
+        transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s, -webkit-transform 0.4s linear 0s;
+    }
+    
+    .effect.aeneas a i {
+        transition: -webkit-transform 0.4s linear 0s;
+        transition: transform 0.4s linear 0s;
+        transition: transform 0.4s linear 0s, -webkit-transform 0.4s linear 0s;
+    }
+    
+    .effect.aeneas a:hover {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        border-radius: 50%;
+    }
+    
+    .effect.aeneas a:hover i {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+    
+    .hr-text {
+        line-height: 1em;
+        position: relative;
+        outline: 0;
+        border: 0;
+        color: black;
+        text-align: center;
+        height: 1.5em;
+        opacity: .5;
+    }
+    
+    .hr-text:before {
+        content: '';
+        background: linear-gradient(to right, transparent, #818078, transparent);
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 1px;
+    }
+    
+    .hr-text:after {
+        content: attr(data-content);
+        position: relative;
+        display: inline-block;
+        color: black;
+        padding: 0 .5em;
+        line-height: 1.5em;
+        color: #818078;
+        background-color: #fcfcfa;
+    }
+    
+    @media (max-width: 600px) {
+        .effect {
+            width: 50%;
+        }
+        .sizefont {
+            font-size: 18px;
+        }
+        .sizefont2 {
+            font-size: 20px;
+            margin-top: 0px;
+        }
+        .sizefont3 {
+            font-size: 28px;
+            margin-top: 0px;
+        }
+    }
+    
+    .map-responsive {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+    }
+    
+    .map-responsive iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+</style>
+
+
+<footer id="sticky-footer " class="py-4 text-white-50 ">
+    <div class="container text-center ">
+        <div class="row">
+            <div class="col-sm-4 footer">
+                <h1 class="sizefont3 " style="margin-bottom: 0px;">Information About</h1>
+                <hr class="hr-text" data-content="" style="margin:0px;">
+                <div class=" sizefont text-left" style="letter-spacing:0.5px; padding-right:10px;">
+                    <i class='fas fa-map-marker-alt text-left' style='font-size:24px'></i> &nbsp; &nbsp; ASEAN Institute for Health Development, Mahidol University
+                    <br>999 Phuttamonthon 4 Rd.Salaya Phuttamonthon, NakonPathom 73170 THAILAND
+                    <br><i class='fas fa-phone-volume' style='font-size:24px; margin-top: 10px;'></i>&nbsp; &nbsp;Tel: 02-441-9040-3 &nbsp; Fax: 02-441-9044
+                </div>
+            </div>
+            <div class="col-sm-5 map" style="margin-top: 20px;">
+                <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.7974359648906!2d100.3235030152743!3d13.79108140009661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2938af25c1cc7%3A0x48824c1e0bc62a19!2sASEAN%20Institute%20for%20Health%20Development!5e0!3m2!1sen!2sth!4v1589248952097!5m2!1sen!2sth"
+                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+            </div>
+            <div class="col-sm-3">
+                <div class="row">
+                    <div class="col-sm-12" style="padding:0px; padding-right: 0px;padding-left: 0px;">
+                        <h1 class="sizefont3" style="margin-bottom: 0px;">Subscribe</h1>
+                        <hr class="hr-text" data-content="" style="margin:0px;">
+                        <div class="effect aeneas" style="margin:auto;">
+                            <div class="buttona" style=" margin: 0px auto 0px auto;">
+                                <a href="https://www.facebook.com/AIHD.MU/" class="fb" title="Follow us on Facebook" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                                <a href="https://twitter.com/aihd_mahidol" class="tw" title="Follow us on Twitter" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                                <a href="https://www.youtube.com/channel/UCioDmexJOGb2rUE-7ieglZA" class="yt" title="Watch us on YouTube" target="_blank" style="margin-right:0px;"><i
+                                        class="fab fa-youtube" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+</footer>
+
+<footer class="text-center" style="background-color:goldenrod; font-size:15px;padding:0px;">
+    <h1 class="footer0" style="background-color:goldenrod; font-size:18px;padding:10px; letter-spacing: 2px;">Copyright &copy; ASEAN Institute for Health Developement, Mahidol University</h1>
+</footer>

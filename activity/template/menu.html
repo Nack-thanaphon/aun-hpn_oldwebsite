@@ -1,0 +1,292 @@
+<style>
+    .navbar {
+        font-size: 22px;
+        text-decoration: none;
+        color: #000;
+        letter-spacing: 0.5px;
+    }
+    
+    .nav-item {
+        padding-right: 15px;
+    }
+    
+    .nav-link {
+        padding-top: 0.75rem;
+        color: #581832;
+        font-weight: 600;
+    }
+    
+    li {
+        font-size: 22px;
+        letter-spacing: 1.5px;
+    }
+    
+    .dropdown-toggle::after {
+        font-size: 15px;
+    }
+    
+    .dropdown-menu {
+        min-width: 0rem;
+    }
+    
+    .dropdown-submenu {
+        position: relative;
+    }
+    
+    .dropdown-submenu a::after {
+        transform: rotate(-90deg);
+        position: absolute;
+        right: 6px;
+        top: 1.1em;
+    }
+    
+    .dropdown-submenu .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-left: .1rem;
+        margin-right: .1rem;
+    }
+    
+    .navbar .dropdown-item.active,
+    .navbar .dropdown-item:active {
+        color: inherit;
+        text-decoration: none;
+        background-color: inherit;
+    }
+    
+    .navbar .dropdown-item:focus,
+    .navbar .dropdown-item:hover {
+        color: #000;
+        text-decoration: none;
+        background-color: #bfc0c2;
+    }
+    
+    .navbar-toggler-icon {
+        background-image: url(../img/icon/omenu.svg);
+    }
+    
+    .navbar-font {
+        background-color: #fff;
+        color: #114797;
+    }
+    
+    .nav-link:hover {
+        text-decoration: none;
+        color: #2363B6;
+    }
+    
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+    }
+    
+    .nav-item::after {
+        content: '';
+        display: block;
+        width: 0px;
+        height: 2.5px;
+        background: #fec400;
+        transition: 0.2s;
+    }
+    
+    .nav-item:hover::after {
+        width: 100%;
+    }
+    
+    li .dropdown-item a {
+        color: black;
+        font-weight: 700;
+    }
+    
+    li .dropdown-item :hover {
+        color: #0e2952;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    
+    .dropdown-toggle::after {
+        display: inline-block;
+        margin-left: .255em;
+        vertical-align: .255em;
+        content: "";
+        border-top: .3em solid;
+        border-right: .3em solid transparent;
+        border-bottom: 0;
+        border-left: .3em solid transparent;
+    }
+    
+    .imgimgimg {
+        padding: 20px 0px;
+        padding-left: 5px;
+        ;
+    }
+    
+    .topnav {
+        overflow: hidden;
+        background-color: #114797;
+    }
+    
+    .topnav a {
+        float: left;
+        color: rgb(233, 233, 233);
+        text-align: center;
+        padding: 0px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        border-left: 1px solid grey;
+        margin: 4px 0px;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+    
+    .topnav a:hover {
+        color: #fec400;
+        margin: 4px 0px;
+    }
+    
+    .topnav-right {
+        float: right;
+    }
+    
+    @media (max-width: 1228px) {
+        .navbar {
+            font-size: 20px;
+            text-decoration: none;
+        }
+        li.dropdown-item {
+            font-size: 20px;
+        }
+    }
+    
+    @media (max-width: 1216px) {
+        .navbar {
+            font-size: 18px;
+            text-decoration: none;
+        }
+        li.dropdown-item {
+            font-size: 18px;
+        }
+    }
+    
+    @media (max-width: 1206px) {
+        .navbar {
+            font-size: 14px;
+            text-decoration: none;
+        }
+        li.dropdown-item {
+            font-size: 14px;
+        }
+        .navbar-expand-md .navbar-nav .nav-link {
+            padding-left: 0rem;
+        }
+    }
+    
+    @media (max-width: 1095px) {
+        .nav-item {
+            padding-right: 0px;
+        }
+    }
+    
+    @media (max-width: 1010px) {
+        .navbar-expand-md .navbar-nav .nav-link {
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+        }
+    }
+    
+    @media (max-width: 894px) {
+        .navbar-expand-md .navbar-nav .nav-link {
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            font-size: 16px;
+        }
+    }
+    
+    @media (max-width: 780px) {
+        .navbar-expand-md .navbar-nav .nav-link {
+            padding-right: 0.25rem;
+            padding-left: 0.25rem;
+            font-size: 16px;
+        }
+    }
+    
+    @media (max-width: 742px) {
+        .navbar-expand-md .navbar-nav .nav-link {
+            padding-right: 1rem;
+            padding-left: 1rem;
+            font-size: 20px;
+        }
+    }
+   
+    }
+    
+    @media (max-width: 320px) {
+        .topnav a {
+            font-size: 16px;
+        }
+    }
+    .logo{
+        max-width: 65%;
+        height: 3%;
+    }
+</style>
+<!--114797
+<div class="container-fluid" style="padding:0px;background-color: #114797;">
+    <div class="container-fluid" style="padding:0px;width:75%;">
+        <div class="topnav">
+            <div class="topnav-right">
+                <a href="https://aihd.mahidol.ac.th/main/AIHD_EN/" target="_blank">AIHD</a>-->
+<!--<a href="#search" target="_blank">Quationare</a>
+                <a href="#search">TH</a>
+                <a href="index.php" style="border-right: 1px solid grey;">EN</a>
+            </div>
+        </div>
+    </div>
+</div>-->
+<!--menu-->
+<div class="container-fluid navbar-font" style="padding:0px;">
+    <div class="container-fluid" style="padding:0px;max-width: 99%;">
+        <nav class="navbar navbar-expand-lg " style="padding:0px;">
+            <div class="logo"><img class="img-fluid imgimgimg" src="../img/logo/logonew6.png"></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="aunhpn_intro.php" target="_blank">About Us</a></li>
+                            <li><a class="dropdown-item" href="" target="_blank">History</a></li>
+                            <li><a class="dropdown-item" href="aunhpngoal.php" target="_blank">Goal</a></li>
+                            <li><a class="dropdown-item" href="" target="_blank">Performance</a></li>
+                            <li><a class="dropdown-item" href="" target="_blank">Management</a></li>
+                            <li><a class="dropdown-item" href="aunhpn_team.php" target="_blank">Team</a></li>
+                            <!--<li><a class="dropdown-item" href="" target="_blank">Resources</a></li>-->
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Member</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="howtoapply.php" target="_blank">How to apply?</a></li>
+                            <li><a class="dropdown-item" href="aunhpnmember.php" target="_blank">AUN–HPN University  Members</a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#">Activities</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#">Contact Us</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+
+</div>
